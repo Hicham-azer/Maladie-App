@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:stretchColumns="1"
+        android:layout_height="200px">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:paddingBottom="50px"
+            android:paddingTop="40px">
+
+            <TextView
+                android:text="NOM :"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                tools:textColor="@color/colorPrimary"
+                android:textColorLink="@android:color/transparent"
+                android:textStyle="bold"
+                android:layout_width="95dp"
+                android:paddingStart="20px" />
+
+            <EditText
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/nom"
+                 />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50px">
+
+            <TextView
+                android:text="DESCRIPTION :"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                tools:textColor="@color/colorPrimary"
+                android:textColorLink="@android:color/transparent"
+                android:textStyle="bold"
+                android:paddingStart="20px" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:id="@+id/desc" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50px">
+
+            <TextView
+                android:text="CAUSES : "
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                tools:textColor="@color/colorPrimary"
+                android:textColorLink="@android:color/transparent"
+                android:textStyle="bold"
+                android:paddingStart="20px" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/causes" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50px">
+
+            <TextView
+                android:text="SYMPTÖMES : "
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                tools:textColor="@color/colorPrimary"
+                android:textColorLink="@android:color/transparent"
+                android:textStyle="bold"
+                android:paddingStart="20px" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/symp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50px">
+
+            <TextView
+                android:text="TRAITEMENT :  "
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                tools:textColor="@color/colorPrimary"
+                android:textColorLink="@android:color/transparent"
+                android:textStyle="bold"
+                android:paddingStart="20px" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/trait" />
+
+
+
+        </TableRow>
+        <Button
+            android:text="AJOUTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textStyle="normal|bold"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:elevation="18dp"
+            android:background="?attr/colorControlHighlight" />
+    </TableLayout>
+</ScrollView>
